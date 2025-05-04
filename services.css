@@ -1,9 +1,10 @@
-/* Global Styles */
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: Georgia, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
+    background-image: url('pics/background.jpg');
   }
   
   header {
@@ -73,52 +74,69 @@ body {
       flex: 1 1 100%;
     }
   }
-  /* Footer Styles */
-.custom-footer {
+  
+  .custom-footer {
     background-color: #143063;
     color: white;
-    padding: 2rem 0;
+    padding: 15px 20px;
+    font-size: 14px;
   }
   
   .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
   }
   
-  .footer-left,
-  .footer-right {
+  .footer-left {
     display: flex;
     align-items: center;
+    gap: 15px;
+    flex: 1;
+    justify-content: flex-start;
   }
   
-  .footer-left a {
-    margin-right: 1rem;
+  
+  .footer-left img {
+    height: 26px;
+    transition: transform 0.2s;
+  }
+  
+  
+  
+  .footer-left img:hover {
+    transform: scale(1.1);
   }
   
   .footer-center {
     text-align: center;
+    flex: 1;
   }
   
   .footer-center img {
-    height: 30px; /* Yale logo size */
+    height: 26px;
   }
   
-  .footer-left img {
-    height: 24px; /* Social media icons size */
+  .footer-right {
+    display: flex;
+    gap: 12px;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
   }
   
   .footer-right a {
     color: white;
-    margin: 0 1rem;
     text-decoration: none;
+    font-size: 14px;
   }
   
   .footer-right a:hover {
     text-decoration: underline;
   }
-  
   
 
 .services-container {
